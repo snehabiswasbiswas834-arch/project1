@@ -1,0 +1,140 @@
+nav{
+    background-color:#6583c3;
+    color:white;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding:10pX;
+    border-radius:20px; 
+    box-shadow: 0px 0px 5px 5px grey;
+}
+ .brand{
+      font-size: 20px;
+      font-weight:bold;
+       color:rgb(228, 231, 237);
+       text-decoration: none;
+  }
+.menu{
+    list-style:none;
+    display:flex;
+    margin:0;
+    padding:0;
+}
+li{
+    padding:10px;
+}
+li a{
+    color:rgb(4, 51, 104);
+    text-decoration:none;
+}
+li a:hover{
+    background-color:cyan;
+    color:rgb(170, 79, 79);
+    transition:0.5s;
+    padding:7px;
+
+}
+nav{
+    background-color: #406770;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px gray;
+}
+.brand{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+li{
+    padding: 10px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: cyan;
+    color: rgb(103, 159, 223);
+    transition: 0.5s;
+    padding: 5px;
+}
+.menu-toogle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 20pt;
+    cursor: pointer;
+}
+/* book gallery style*/
+.book-gallery{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.book1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.book1 img{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px grey;
+    justify-content: center;
+}
+.book1 button{
+    background-color: rgb(181, 24, 24);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 130px;
+    width: 100px;
+    padding: 15px;
+}
+.book1 button:hover{
+    background-color: cadetblue;
+    color: white;
+    transition: 0.5s;
+}
+.book1 img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px 5px grey;
+}
+/* mobile mode */
+@media(max-width:420px){
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-toogle::checked + .menu-icon + .menu{
+        display: flex;
+    }
+    li{
+        padding: 10px;
+    }
+}
